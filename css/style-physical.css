@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box; 
+}
+
+@font-face { 
+    font-family: anggie;
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-style: normal;
+    font-weight: 400; /*AGREGAR UNA FUENTE EN LA URL https://www.freefontspro.com/es/c/11/normal-fuentes, Personalisadas*/
+}
+
+:root { /* html  {} igual que el HTML*/
+    font-size: 18px;
+    --gray30: #212121;
+    --gray20: #212429;
+    --gray10: #616161;
+    /* direction: rtl; Cambia hacia la derecha */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--gray30);
+    font-size: 15px;
+    font-family: Anggie;
+    margin: 0;
+}
+
+/* {
+    color: var(--gray20);
+} En general */
+
+a {
+    /*font-size: 14px;*/
+    color: var(--gray30);
+}
+
+header {
+    /*--gray10: red; colocar otro color*/  
+    font-size: 14px;
+    width: 188px;
+    color: var(--gray30);
+    position: absolute;
+    /* border: 1px solid red; */
+    left: -232px;
+    top: 64px;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+    margin: 50px; Ventana de modal*/
+    /* top: 200px; */
+    /* left: 30px; */
+    /* right: 50px; */
+    /* bottom: 100px; */
+    /* background: red; */
+    /* z-index: -1; */
+    /* position: absolute; */
+    /* position: fixed; */
+    /* position: sticky; */
+}
+
+
+header a { /*Colocar el color del menú*/
+    font-size: 14px;
+    color: var(--gray30);
+    text-decoration: none; /*uitar la línea en el texto*/
+}
+
+header a:hover {
+ color: var(--gray30);
+}
+
+nav details summary {
+    font-weight: bold;
+    line-height: 24px;
+}
+
+header li {
+    margin-bottom: 16px;
+}
+/* Psedudo clase */
+/*ol li:nth-child(even) { /* colocar los cuadros de las líneas first-child, last-child, :nth-child(2n) "Impares", :nth-child(even), :nth-child(1n)   
+    border: 1px solid red;
+}
+*/
+
+header a:hover { /*Pseu*/
+    color: #212121;
+    text-decoration: none; /*Quitar el subrayado de la letra*/
+}
+
+h1 {
+   /*font-size: 4em;*/
+   font-size: 60px;
+   margin-top: 64px;
+   margin-bottom: 16px;
+   font-weight: normal;
+   /* margin-left: 10px; */
+   /* margin-right: 10px; */
+   /* margin:  top right bottom left; */
+   /* margin: 64px 10px 16px 10px; */
+   /* margin: 10px 5px; */
+   /* margin: 30px 20px 10px:   */
+   /* text-align: right; Alineacion hacia la derecha de texto */
+   /*font-size: 3.75em;*/
+   /*Box_Sizing*/
+   /* border: 10px solid red; */
+   /* width: 400px; */
+   /* height: 400px; */
+   /* padding: 40px; */
+}
+
+/*h1 + p {
+    background: red;
+    margin-bottom: 64px;
+}*/
+
+hr {
+    margin: 64px 0;
+}
+
+h2 {
+   font-size: 2em;
+   margin: 64px 0 40px;
+   font-weight: normal;
+}
+
+h3{
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-weight: normal;
+    position: sticky;
+    top: 0;
+    background: white;
+    /* width: 200px; */
+    /* padding: 20px; */
+    /* border: 1px solid red; */
+    /* box-sizing: border-box;  */
+}
+
+pre {
+ background: #FEC62E; /*COLOCAR EL COLOR*/
+ padding: 40px;
+ /* padding-left: 40px;  HACIA LA IZQUIERDA*/
+font-family: 'Roboto';
+line-height: 24px;
+}
+
+blockquote {
+    margin: 32px 0;
+    padding-left: 16px;
+    font-size: 24px; 
+    line-height: 24px;
+    /* border: 10px solid red; */
+    /* border-top: 10px solid pink; */
+    /* border-top-color: aqua; */
+    /* border-top-style: dashed; colocar en lineas separadas */
+    /* border-radius: 50px 100px 10px 0; Bordes redondiado */
+    border-left: 4px solid var(--gray30);
+}
+
+blockquote span {
+    color: var(--gray10);
+}
+
+blockquote span::before {
+    content: '-';
+}
+
+.header {
+    border: 1px solid red;
+    position: sticky;
+    top: 0;
+}
+/* input { HACER FORMULARIOS */
+    /* padding: 10px 50px; */
+    /* margin: 20px; */
+    /* display: block; */
+    /* width: 500px; */
+    /* width: 50%; */
+    /* box-sizing: border-box; */
+    /* border: 2px solid red; */
+/* } */
+
+/*Colocar dos texto separados*/
+/* .form { */
+    /* font-size: 0; */
+/* } 
+
+/*Aqui se puede colocar un borde a un texto*/
+/* .debug { */
+    /* box-shadow: inset 0 0 100px red; Colocar la sombra en el cuadro, inset esta dentro de la caja */
+    /* border:50px solid red; */
+    /* background: red; */
+    /* border: 1px solid red !important; */
+    /* box-sizing: border-box;  Colocar el border*/
+/* } */
+
+/* .title { */
+    /* height: 200px; */
+    /* width: 200px; */
+    /* margin: 100px; */
+    /* border: 10px solid blue; */
+/* } */
+
+/*-------------------------------*/
+
+.dom {
+    width: 900px;
+    height: 400px;
+    
+}
+
+.header-content {
+    position: relative;
+}
+
+.main {
+    /* background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../img/pattern.png);  */
+    /* border: 1px solid red; */
+    /* width: 902px; */
+    /* background: white; */
+    margin: auto; 
+}
+
+.wrapper {
+    width: 902px;
+    margin: auto;
+    /* padding: 20px; */
+}
+
+.main-content {
+    /* background: wheat; */
+    background: white;
+    /* padding: 20px; */
+}
+
+.hero {
+    background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../img/pattern.png); /*Se*/
+    /* background-repeat: no-repeat; */
+    /* background-position: left 50px bottom -50px;  */
+    /* background-size: cover; Cover no se pierda */
+    height: 350px;
+}
+
+.section-content {
+    margin-top: 164px;
+}
+
+.section-content:first-of-type {
+   margin: 0;
+}
+/* OCULTAR UN ELEMENTO */
+
+.section-content + hr {
+    display: none; 
+}
+
+.section-content img {
+    margin-top: 40px;
+}
+
+/* Pseudo de Elementos */
+
+/* Colocar la numeración de los textos principales, ejemplo 
+
+1 hola */
+
+ /*Listas*/
+
+
+ .section-content ol li {
+line-height: 24px; /*Colocar el espacio del parrafo*/
+ }
+
+ .section-content ul li {
+    margin: 16px;
+ }
+
+.section-content {
+    counter-reset: titleList;
+}
+
+.section-content h3 {
+    counter-increment: titleList;
+    padding-bottom: 8px;
+}
+
+/* Counters COLOCAR EL NÚMERO EN LAS LETRAS*/
+.section-content h3::before {
+content: counter(titleList, decimal) '. '; /*Se podría colocar "-" */
+}
+
+.section-content h3::after {
+content: '';
+width: 80px;
+height: 4px;
+background: var(--gray30);
+display: inline-block;
+position: absolute;
+left: 0px;
+bottom: 0px;
+}
+
+/* Modelo de Caja */
+
+
+
+/* Colocar la línea de abajo del texto */
+
+
+
+/* ::selection {
+    background: green;
+} */
+
+
+/*header {
+    background: red;
+    width: 80vw;
+}*/
+
+/*@media screen {max-width: 600px;}{
+    body {
+        font-size: 5px;
+    }
+}
+
+* otra forma de hacer/ 

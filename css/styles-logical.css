@@ -1,0 +1,431 @@
+/* @font-face { AGREGAR UNA FUENTE EN LA URL https://www.freefontspro.com/es/c/11/normal-fuentes, Personalisadas */
+    /* font-family: anggie; */
+    /* src: url('../fonts/Nunito-Bold.ttf'); */
+    /* font-style: normal; */
+    /* font-weight: 400; Peso de la fuente */
+
+
+:root { /* html  {} igual que el HTML*/
+    font-size: 18px;
+    --white30: white;
+    --white20: #A5A3A5;
+    --white10: #D4939D;
+    --white11: #D4939D; 
+    /* direction: rtl; Cambia hacia la derecha */
+}
+
+
+body {
+    color: var(--white30);
+    font-size: 19px;
+    font-family: 'Nunito', sans-serif;
+    background: #232946;
+    margin: 0;
+    /* writing-mode: vertical-lr; CAMBIAR DE MODO VERTICAL */
+    /* margin: 10px 'Arriba', 10px 'derecha', 10px 'abajo', 10px 'Izquierda'; */
+    /* margin-block-start: 50px; */
+    /* margin-block-end: 50px; */
+
+    /* Logico EN BASE DE DIRECCIÓN DEL CONTENIDO*/
+    /* margin-inline: 100px; Esto es igual como margin: 0 */
+    /* margin-block: 100px; */
+}
+
+/* {
+    color: var(--gray20);
+} En general */
+
+a {
+    /*font-size: 14px;*/
+    color: var(--gray30);
+}
+
+.header-content { 
+    /* position: relative; +++*/
+    /* inset-block-start: -45px; ++ */
+    padding-inline: 20px;
+}
+
+/* .header { +++ */
+
+    /*ALINEAR EL MENÚ IZQUIERDA*/
+    /* position: sticky; ++*/
+    /* inset-block-start: -45px; ++ */
+    /*COLOCAR UN MODAL*/
+    /* background: red; */
+    /* position: fixed; */
+    /* height: 500px; */
+    /* width: 500px; */
+    /* inset: 50px */
+    /* inset-inline:50px; */
+    /* inset-block:50px; */
+    /* blocñ-size: 500px */
+    /* inline-size: 500px; */
+/* } */
+
+
+header {
+    margin-block-start: 20px;
+    /*--gray10: red; colocar otro color*/  
+    font-size: 14px; 
+    color: var(--white); 
+    /* position: absolute; ++ */
+    /*top*/
+    /* inset-block-start: 0; ++  */
+    /*botton*/
+    /* inset-block-end: ; */
+    /*left*/
+    /* inset-inline-start: -208px; ++ */
+    /*right*/
+    /* inset-inline-end: ; */
+    /* inline-size: 188px;  ++ */
+}
+
+
+header li {
+    color: var(--white20);
+    margin-block-end: 16px; /*COLOCAR EL ESPACIO DE LA LETRA*/
+}
+
+header a { /*Colocar el color del menú*/
+    color: var(--white20);
+    text-decoration: none;
+}
+
+header a:hover {
+ color: var(--white30);
+}
+
+nav details summary {
+    font-weight: bold;
+}
+
+/* Psedudo clase */
+/*ol li:nth-child(even) { /* colocar los cuadros de las líneas first-child, last-child, :nth-child(2n) "Impares", :nth-child(even), :nth-child(1n)   
+    border: 1px solid red;
+}
+*/
+
+header a:hover { /*Pseu*/
+    color: #212121;
+    text-decoration: none; /*Quitar el subrayado de la letra*/
+}
+
+h1 {
+   /*font-size: 4em;*/
+   /* font-weight: normal; */
+   /* text-align: right; Alineacion hacia la derecha de texto */
+   /*font-size: 3.75em;*/
+
+   /*COLOCAR LA IMAGEN DE LOS TEXTOS*/
+   font-size: 40px;
+   margin-block-start: 20px;
+   margin-block-end: 16px;
+    /* text-align: right; cambiar la posición del texto*/
+}
+
+p {
+    text-align: justify !important; /*JUSTIFICAR EL TEXTO*/
+}
+
+h2 {
+   font-size: 1em;
+   font-weight: normal;
+   margin-block-end: 20px;
+
+   /*Colocar el margen de espacio LOGICA*/
+   margin-block: 40px;
+}
+
+h3{
+    font-size: 1.5em;
+    border-color: rgba(97, 97, 97, 0.2);
+    font-weight: 600;
+    margin-block-end: 400px;
+
+    margin-block: 16px;
+}
+
+hr {
+    margin-block: 40px;
+}
+
+/* h1, h2, h3 { */
+    /* font-weight: normal; */
+/* Tambien se puede colocar de esta manera} */
+
+pre {
+ background: #232946; /*COLOCAR EL COLOR*/
+    padding: 40px;
+    overflow: auto; /* COLOCAR UN DESPLAZAMIENTO AL CAMPO PARA QUE SE LEA */
+    border-radius: 8px; /*MODIFICAR EL BORDEN DEL CUADRO*/
+    /* border: 10px solid red; COLOCAR EL COLOR DEL BORDER */
+    /* border-left: 5px solid blue; CAMBIAR EL BORDEN EN LA PARTE DE IZQUIERDA */
+    
+    /*LOGICO*/
+
+    /* border-inline-start: 5px solid white; */
+    /* border-inline-end: 20px solid hotpink; /**/
+    /* border-inline-end: 5px solid green; */
+    /* border-block-start-color: burlywood; */ 
+
+    /*BORDE PARA EL SIGUIENTE EJERCICIO*/
+    /* border: 10px solid #5551ff; */
+    /* box-shadow: -10px 10px 0 0 #ABAAF6; */
+
+    /* margin-block-end: 30px;
+    border-radius: 50px; /*COLOCAR EL CUADRO EN CURVA*/
+
+    /* inline-size: 400px;
+    block-size: 400px; */ 
+
+    /*LÓGICO*/
+    /* border-start-start-radius: 15px; */
+
+
+    /* border-block: 20px solid pink; COLOCAR SUPERIOR Y LA PARTE DE ABAJO */
+
+}
+
+p {
+    color: var(--white20)
+}
+
+.hero {
+    background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../img/pattern_2.png); 
+    background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+    /* background-repeat: no-repeat; */
+    /* background-position: left 50px bottom -50px;  */
+    /* background-size: cover; Cover no se pierda */
+    /* height: 350px; Colocar el ancho del paner de arriba */
+    block-size: 50px; /*COLOCAR EL ANCHO DE LA IMAGEN*/
+}
+
+/* Pseudo de Elementos */
+
+/* Colocar la numeración de los textos principales, ejemplo 
+
+1 hola */
+
+.section-content {
+    counter-reset: titleList;
+}
+
+.section-content img {
+    margin-block-start: 40px ;
+    /* border: 1px solid red; */
+    display: block;
+    /* max-width: 100%; MINAMIZAR LA IMAGEN DEL NAVEGADOR */
+    max-inline-size: 100%; /*MINAMIZAR LA ESTRUCTURA EN EL NAVEGADOR*/
+}
+
+.section-content h3 {
+    counter-increment: titleList; /*Colocar la lista de los números por ejemplo "1. "*/
+}
+
+/* Counters */
+.section-content h3::before {
+content: counter(titleList, decimal) '. '; /*Se podría colocar "-" */
+}
+
+/* ----------COLOCAR LA LÍNEA ABAJO DE LA LETRA  */
+/* .section-content h3::after {
+content: '';
+width: 32px;
+height: 4px;
+background: var(--white10);
+display: inline-block;
+position: absolute;
+left: 0px;
+bottom: 0px;
+} */
+
+blockquote {
+    /* border: 1px solid red; */
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    background-color: var(--white10);
+    border-radius: 8px;
+    line-height: 32px;
+    font-size: 24px;
+    /* padding: 24px; */
+     padding-inline-end: 24px; /*Padding derecha */
+    padding-inline-start: 24px; /*hacia la izquierda */
+    padding-block-start: 24px; /* Hacia arriba */
+    padding-block-end: 24px;  /*hacia abajo */
+}
+
+blockquote p {
+    color: #232946;
+}
+
+.main hr {
+    display: none; /*QUITAR UN ELEMENTO*/
+}
+
+.main {
+    /* border: 1px solid red; */
+    padding: 10px;
+    /* background: red; */
+}
+
+.wrapper {
+    /* border: 1px solid yellow; */
+    /* inline-size: 902px; TAMAÑO DE CENTRO DE LA PÁGINA */
+    max-inline-size: 902px; /*MINAMIZAR EL NAVEGADOR*/
+    margin: auto;
+    /* block-size: 100px; */
+    /* width:  COLOCAR EL ANCHO; */
+
+}
+
+.main-content {
+    /* background: blue; */
+    /* border: 1px solid blue; */
+    padding-inline: 16px;
+}
+
+/*DISEÑO PARA COLOCAR LOS VÍDEOS*/
+
+/* .slider { */
+ /* border: 1px solid red; */
+/* } */
+
+.slider-container {
+    /* block-size: 100px; COLOCAR ALTO LA IMAGEN */
+    display: block;
+    overflow: auto; /*COLOCAR ADENTRO EL CONTENIDO*/
+    scroll-behavior: smooth;
+    white-space: nowrap; /*VAYA A LA SIGUIENTE LÍNEA*/
+    /* border: 1px solid blue; */
+    font-size: 0;
+}
+
+.video {
+    margin: 0;
+    /* border: 1px solid palegreen; */
+    display: inline-block; /*COLOCAR EL ANCHO*/
+    width: 100%; /*ANCHO*/
+    height: auto;
+    aspect-ratio: 16/9; /*Video vertical 9/16*/
+}
+
+.slider-bullet-list {
+    /* border: 1px solid yellow; */
+    text-align: center;
+    margin-block-start: 10px;
+    
+}
+
+.slider-bullet {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+.form input {
+    /* inline-size: 100%; Mismo alto */
+    width: 100%;
+    border: 5px solid var(--white20);
+    background: #232946;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: var(--white30);
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px; /*COLOCAR EL ESPACIO DEL INPUT*/
+}
+
+/* footer */
+
+.footer-style {
+    padding-top: 40px;
+    background: #EEBBC3;
+}
+
+footer {
+    /* width: 1400px; */
+/* height: 174px; */
+
+font-family: 'Nunito', sans-serif;
+/* font-style: normal; */
+/* font-weight: 400px; */
+font-size: 25px;
+text-align: center;
+padding: 40px;
+/* line-height: 38px; */
+color: #232946;
+
+}
+
+
+
+.form input[type="submit"]{
+    background: #EEBBC3;
+    color: #232946;
+    border: none;
+}
+.form input::-webkit-input-placeholder { 
+    color: var(--white30);
+}
+
+/*Medias_QUERIES*//*min-width, ES PARA COLOCAR MINIMO*/ 
+
+ @media screen and (min-width: 1366px) {  
+    .hero {
+        block-size: 350px;
+    }
+    .header {
+    
+        position: sticky;
+        inset-block-start: 65px;
+        padding-inline: 0;
+    }
+
+    .header-content {
+        position: relative;
+        inset-block-start: 65px;
+    }
+    
+    header { 
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+    
+  }  
+} 
+/* Modelo de Caja */
+
+
+
+/* Colocar la línea de abajo del texto */
+
+
+
+/* ::selection {
+    background: green;
+} */
+
+
+/*header {
+    background: red;
+    width: 80vw;
+}*/
+
+/*@media screen {max-width: 600px;}{
+    body {
+        font-size: 5px;
+    }
+}
+
+* otra forma de hacer/ 
